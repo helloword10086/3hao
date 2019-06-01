@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/Take-out/Take-out",
+    "pages/map/map"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "V教咖啡工店",
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json"
 }
