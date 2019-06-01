@@ -1,15 +1,53 @@
 {
   "pages": [
+<<<<<<< HEAD
     "pages/index/index",
     "pages/Take-out/Take-out",
     "pages/map/map",
     "pages/menu/menu"
+=======
+    "pages/Order/Order",
+    "pages/Line-up/Line-up",
+    "pages/Take-out/Take-out",
+    "pages/Member/Member"
+>>>>>>> 7e9484cdf3dcecd4a3033cdde1ae0a496d28d6d6
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "V教咖啡工店",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Take-out/Take-out",
+        "text": "外卖",
+        "iconPath": "images/TabBar/waimai.png",
+        "selectedIconPath":"images/TabBar/waimai.png"
+      },
+      {
+        "pagePath": "pages/Line-up/Line-up",
+        "text": "排队",
+        "iconPath": "images/TabBar/paidui.png",
+        "selectedIconPath":"images/TabBar/paidui.png"
+      },
+      {
+        "pagePath": "pages/Order/Order",
+        "text": "订单",
+        "iconPath": "images/TabBar/dingdan.png",
+        "selectedIconPath":"images/TabBar/dingdan.png"
+      },
+      {
+        "pagePath": "pages/Member/Member",
+        "text": "会员中心",
+        "iconPath": "images/TabBar/huiyuan.png",
+        "selectedIconPath":"images/TabBar/huiyuan.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectedColor": "#0286f1"
   },
   "sitemapLocation": "sitemap.json"
 }
