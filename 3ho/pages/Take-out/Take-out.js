@@ -21,6 +21,11 @@ map:function(e){
     url: '../map/map'
   })
 },
+menu:function(e){
+  wx.navigateTo({
+    url: '../menu/menu'
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,11 +1,9 @@
 {
   "pages": [
-<<<<<<< HEAD
-    "pages/index/index"
-=======
+    "pages/index/index",
     "pages/Take-out/Take-out",
-    "pages/map/map"
->>>>>>> 34e55ed36703087f8e5d34e4c17a8d8dd837d233
+    "pages/map/map",
+    "pages/menu/menu"
   ],
   "window": {
     "backgroundTextStyle": "light",

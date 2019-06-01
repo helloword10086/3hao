@@ -24,7 +24,7 @@ Page({
   },
   detail(){
     wx.navigateTo({
-      url: '../take-out/take-out',
+      url: '../Take-out/Take-out',
     })
   },
   /**
