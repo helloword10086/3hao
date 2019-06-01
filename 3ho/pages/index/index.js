@@ -1,26 +1,32 @@
-// pages/Take-out/Take-out.js
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "bnrUrl": [{
-      "url": "../../images/bg1.jpg"
-    }, {
-      "url": "../../images/bg2.jpg"
-    }, {
-      "url": "../../images/bg3.jpg"
-    }, {
-      "url": "../../images/bg1.jpg"
-    }],
-    hotKeyword: ['小吃快餐', '奶茶', '面包甜点', '咖啡', '餐饮', '可以刷卡', '无线上网', '有下午茶', '微信支付']
+     flag:true 
   },
-map:function(e){
-  wx.navigateTo({
-    url: '../map/map'
-  })
-},
+  chance(){
+    this.setData({
+      flag: false
+    })
+  },
+  concel(){
+    this.setData({
+      flag: true
+    })
+  },
+  consfrim(e){
+    this.setData({
+      flag: true
+    })
+  },
+  detail(){
+    wx.navigateTo({
+      url: '../take-out/take-out',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -40,6 +46,17 @@ map:function(e){
    */
   onShow: function () {
 
+    wx.setNavigationBarColor({
+      frontColor: '#ffffff',
+      backgroundColor: '#202021',
+      animation: {
+        duration: 400,
+        timingFunc: 'easeIn'
+      }
+    })
+    wx.setNavigationBarTitle({
+      title: '附近的点'
+    })
   },
 
   /**

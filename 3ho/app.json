@@ -7,9 +7,9 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#34363e",
-    "navigationBarTitleText": "二维火点餐",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "V教咖啡工店",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "list": [
