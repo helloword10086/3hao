@@ -8,13 +8,17 @@
     "pages/Line-up/Line-up",
     "pages/user/user"
    
+  
+
+
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "V教咖啡工店",
+    "navigationBarTitleText": "二维火点餐",
     "navigationBarTextStyle": "white"
   },
+
   "tabBar": {
     "list": [
       {
@@ -52,4 +56,5 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   }
+
 }
