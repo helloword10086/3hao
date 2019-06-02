@@ -1,21 +1,17 @@
-// pages/user/user.js
+// pages/user-grade/user-grade.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   flag:false
+    grade: 0
   },
-  phone(e){
-    console.log(e);
-   this.setData({
-     flag:true
-   })
+  editTel() {
     wx.showModal({
       title: '提示',
-      content: '是否绑定号码',
-      success(res) {
+      content: '确认要绑定手机号码吗',
+      success (res) {
         if (res.confirm) {
           console.log('用户点击确定')
         } else if (res.cancel) {
@@ -24,42 +20,29 @@ Page({
       }
     })
   },
-  huiyuanka(e) {
-    console.log(e);
-    var value = e.currentTarget.dataset.value;
-    wx.navigateTo({   
-      url: '../user-info/user-info?value=' +value 
-      // url: '../user-info/user-info'
-    })
-  },
-  gradeStore() {
-    wx.navigateTo({
-      url: '../user-grade/user-grade'
-    })
-  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  wx.setNavigationBarTitle({
-    title: '会员中心'
-  })
-},     
- 
+    wx.setNavigationBarTitle({
+      title: '积分商城'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  }
-,
+
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

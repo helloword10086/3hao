@@ -1,16 +1,15 @@
 {
   "pages": [
-<<<<<<< HEAD
-    "pages/user/user"
-=======
+    "pages/user/user",
     "pages/index/index",
     "pages/Take-out/Take-out",
     "pages/map/map",
     "pages/menu/menu",
     "pages/Order/Order",
     "pages/Line-up/Line-up",
-    "pages/Member/Member"
->>>>>>> 4cdc590681c9e45c35bd6adf6fa2092e4bb82bc8
+    "pages/Member/Member",
+    "pages/user-info/user-info",
+    "pages/user-grade/user-grade"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -49,7 +48,6 @@
     "color": "#000",
     "selectedColor": "#0286f1"
   },
-
   "sitemapLocation": "sitemap.json",
   "permission": {
     "scope.userLocation": {
