@@ -14,7 +14,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
+<<<<<<< HEAD
 	"appid": "wx9b4f41b9c3a6d842",
+=======
+	"appid": "wx06062c370aa29cdb",
+>>>>>>> 5fc3ee7e94c4b83d15501454a02db7b440e423f0
 	"projectname": "3ho",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
@@ -38,8 +42,22 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "user-info",
+					"pathName": "pages/user-info/user-info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "user-grade",
+					"pathName": "pages/user-grade/user-grade",
+					"scene": null
+				}
+			]
 		}
 	}
 }

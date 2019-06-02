@@ -1,11 +1,24 @@
-// pages/Member/Member.js
+// pages/user-grade/user-grade.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    grade: 0
+  },
+  editTel() {
+    wx.showModal({
+      title: '提示',
+      content: '确认要绑定手机号码吗',
+      success (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   },
 
   /**
@@ -19,7 +32,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.setNavigationBarTitle({
+      title: '积分商城'
+    })
   },
 
   /**

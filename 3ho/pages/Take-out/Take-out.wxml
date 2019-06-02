@@ -6,8 +6,8 @@
         <view class="header-picture">
             <view class="picture-left">
                 <image src="../../images/shop.jpg" />
-                <view class="pic-title">V咖教工路店</view>
-                <span class="picture-price">50元以下</span>
+                <view class="pic-title">V教咖啡</view>
+                <span class="picture-price">55元以下</span>
                 <span class="pic-all">综合</span>
             </view>
             <view class="picture-right">
@@ -16,7 +16,7 @@
             <view class="header-foot">
                 <view class="address"bindtap="map">
             <image src="../../images/ad.png" />
-                    <span class="dcr">教工楼552号一楼</span>
+                    <span class="dcr">教工楼第一楼55号</span>
                 </view>
                 <view class="address-iphone">
                     <image src="../../images/phone.png" />
@@ -61,7 +61,7 @@
             </view>
         </view>
         <view class="food-menu">
-            <button class="menu">进入菜单</button>
+            <button class="menu"bindtap="menu">进入菜单</button>
         </view>
     </view>
     <!-- 店铺详情 -->
@@ -69,7 +69,7 @@
         <view class="detail-title">店铺详情</view>
         <view class="detail-pic">
             <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
-                <block wx:for="{{bnrUrl}}" wx:for-index="index">
+                <block wx:for="{{bnrUrl}}" wx:for-index="index"wx:key="{{index}}">
                     <swiper-item>
                         <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
                     </swiper-item>

@@ -1,31 +1,43 @@
-// pages/Take-out/Take-out.js
+// pages/user/user.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "bnrUrl": [{
-      "url": "../../images/bg1.jpg"
-    }, {
-      "url": "../../images/bg2.jpg"
-    }, {
-      "url": "../../images/bg3.jpg"
-    }, {
-      "url": "../../images/bg1.jpg"
-    }],
-    hotKeyword: ['小吃快餐', '奶茶', '面包甜点', '咖啡', '餐饮', '可以刷卡', '无线上网', '有下午茶', '微信支付']
+    flag: false
   },
-  map: function (e) {
-    wx.navigateTo({
-      url: '../map/map'
+  phone(e) {
+    console.log(e);
+    this.setData({
+      flag: true
+    })
+    wx.showModal({
+      title: '提示',
+      content: '是否绑定号码',
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
     })
   },
-  menu: function (e) {
+  huiyuanka(e) {
+    console.log(e);
+    var value = e.currentTarget.dataset.value;
     wx.navigateTo({
-      url: '../menu/menu'
+      url: '../user-info/user-info?value=' + value
+      // url: '../user-info/user-info'
     })
   },
+  gradeStore() {
+    wx.navigateTo({
+      url: '../user-grade/user-grade'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -37,7 +49,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.setNavigationBarTitle({
+      title: '会员中心'
+    })
   },
 
   /**
@@ -45,7 +59,11 @@ Page({
    */
   onShow: function () {
 
-  },
+  }
+  ,
+
+
+
 
   /**
    * 生命周期函数--监听页面隐藏

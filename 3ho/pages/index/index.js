@@ -5,34 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-     flag:true 
+    flag: true
   },
-  chance(){
+  chance() {
     this.setData({
       flag: false
     })
   },
-  concel(){
+  concel() {
     this.setData({
       flag: true
     })
   },
-  consfrim(e){
+  consfrim(e) {
     this.setData({
       flag: true
     })
   },
-  detail(){
+  detail() {
+
+    wx.switchTab({
+
+      url: '../Take-out/Take-out',
+    })
+  },
+  map() {
     wx.navigateTo({
-      url: '../take-out/take-out',
+      url: '../map/map',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
 
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -45,7 +50,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this;
     wx.setNavigationBarColor({
       frontColor: '#ffffff',
       backgroundColor: '#202021',
@@ -56,6 +61,16 @@ Page({
     })
     wx.setNavigationBarTitle({
       title: '附近的点'
+    })
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5cf274e03a77990337d059a0/sao-two/two',
+      success(res) {
+        console.log(res.data)
+        var data = res.data.data;
+        that.setData({
+          data,
+        })
+      }
     })
   },
 
