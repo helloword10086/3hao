@@ -61,12 +61,15 @@ Page({
     let heightArr = [];
     let s = 0
     wx.request({
-      url: 'http://www.gdfengshuo.com/api/wx/cate-detail.txt',
+      url: 'https://www.easy-mock.com/mock/5cf274e03a77990337d059a0/sao-two/ewh',
       success(res) {
         console.log(res)
         self.setData({
-          detail: res.data
+          detail: res.data.data
         })
+      },
+      fail(err) {
+        console.log(err);
       }
     })
     setTimeout(function () {

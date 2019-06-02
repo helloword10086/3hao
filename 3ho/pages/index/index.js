@@ -23,16 +23,15 @@ Page({
     })
   },
   detail(){
-    wx.navigateTo({
+    console.log('-------');
+    wx.switchTab({
       url: '../Take-out/Take-out',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
 
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
