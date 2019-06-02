@@ -1,24 +1,18 @@
 {
   "pages": [
-<<<<<<< HEAD
+  "pages/index/index",
     "pages/Line-up1/Line-up1",
     "pages/Order/Order",
-    "pages/Line-up/Line-up",
-    "pages/Take-out/Take-out",
     "pages/Member/Member",
-    "pages/Order2/Order2"
-    
-=======
-    "pages/index/index",
+    "pages/Order2/Order2",
     "pages/Take-out/Take-out",
     "pages/map/map",
     "pages/menu/menu",
-    "pages/Order/Order",
     "pages/Line-up/Line-up",
     "pages/user-info/user-info",
     "pages/user-grade/user-grade",
     "pages/user/user"
->>>>>>> 5fc3ee7e94c4b83d15501454a02db7b440e423f0
+
   ],
   "window": {
     "backgroundTextStyle": "light",
