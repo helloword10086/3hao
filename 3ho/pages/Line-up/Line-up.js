@@ -7,6 +7,18 @@ Page({
   data: {
 
   },
+  back:function(e){
+    console.log(e)
+    wx.switchTab({
+      url: '../Take-out/Take-out',
+    });
+  },
+  takeNumber:function(a){
+    console.log(a);
+    wx.navigateTo({
+      url: '../Line-up1/Line-up1',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

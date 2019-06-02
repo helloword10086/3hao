@@ -1,3 +1,6 @@
+.flow{
+  overflow: hidden;
+}
 .header{
   width: 100%;
   height: 48px;
@@ -18,7 +21,8 @@
   background-color: #fdfdfd;
 }
 .title{
-  height: 40px;
+  font-size: 12px;
+  height: 25px;
   width: 100%;
   color:#666666;
   margin: 10px;
@@ -26,38 +30,62 @@
   border-bottom: 1px solid #d7d7d7;
 }
 .title .th1{
-  margin: 10px;
+  margin-left: 18px;
 }
 .title .th2{
-  margin: 10px;
+  margin-left: 50px;
 }
 .title .th3{
+  margin-left: 50px;
+}
+.message{
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
+}
+.message .tr1{
+  color: black;
+  font-size: 15px;
+  margin: 25px;
+}
+.message .tr2{
+  color:#989898;
+  font-size: 10px;
+  margin: 0 26px;
+}
+.message .tr3{
+  color:#ea1f00;
+  font-size: 22px;
+  margin-left: 29px;
+  margin-top: 5px;
+}
+.message .tr4{
+  color: black;
+  font-size: 12px;
   margin: 10px;
 }
-.message1{
-display:inline;
+.message .tr5{
+  color:#000;
+  font-size: 14px;
+  margin-left: 75px;
 }
-.message1 .N1{
-color:#bbbbbb;
+.message .tr3{
+  margin-left: 40px;
 }
-.message1 .N2{
-  color:#333;
+.message4 .tr1{
+ margin: 16px;
 }
-.message2{
-
+.message4 .tr3{
+  margin-left: 44px;
 }
-.message2 .M1{
-  color:#d32809;
-  font-size: 40px;
-}
-.message2 .M2{
-  color:#333;
-}
-.message3{
-  color:#333;
+.order-number{
+  width: 100%;
+  height: 75%;
+  background-color: #fff;
 }
 .number{
   background-color: #e02300;
   color:#fff;
   margin: 12px ;
+ 
 }

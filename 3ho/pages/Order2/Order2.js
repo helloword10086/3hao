@@ -12,13 +12,13 @@ Page({
       url: '../Take-out/Take-out',
     });
   },
-  HallOrder:function(e){
+  HallOrder(e){
     console.log(e)
     wx.navigateTo({
       url: '../Order/Order'
     })
   },
-  TakeOutOrder:function(a){
+  TakeOutOrder(a){
     console.log(a)
     wx.navigateTo({
       url: '../Order2/Order2'

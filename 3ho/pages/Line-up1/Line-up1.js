@@ -1,34 +1,26 @@
-// pages/Order/Order.js
+// pages/Line-up1/Line-up1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    stadus:''
+    hotKeyword: ['1人', '2人', '3人', '4人', '5人', '6人', '7人', '8人', '9人','10人','11人','......']
   },
-  back:function(c){
+  cancel(){
     wx.switchTab({
-      url: '../Take-out/Take-out',
-    });
-  },
-  HallOrder:function(e){
-    console.log(e)
-    wx.navigateTo({
-      url: '../Order/Order'
+      url: '../Line-up/Line-up',
     })
   },
-  TakeOutOrder:function(a){
-    console.log(a)
-    wx.navigateTo({
-      url: '../Order2/Order2'
+  confirme(){
+    wx.showModal({
+      title: '提示',
+      content: '不能点餐',
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
-
   onLoad: function (options) {
 
   },
