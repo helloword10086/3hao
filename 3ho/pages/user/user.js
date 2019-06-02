@@ -5,13 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-   flag:false
+    flag: false
   },
-  phone(e){
+  phone(e) {
     console.log(e);
-   this.setData({
-     flag:true
-   })
+    this.setData({
+      flag: true
+    })
     wx.showModal({
       title: '提示',
       content: '是否绑定号码',
@@ -27,8 +27,8 @@ Page({
   huiyuanka(e) {
     console.log(e);
     var value = e.currentTarget.dataset.value;
-    wx.navigateTo({   
-      url: '../user-info/user-info?value=' +value 
+    wx.navigateTo({
+      url: '../user-info/user-info?value=' + value
       // url: '../user-info/user-info'
     })
   },
@@ -42,34 +42,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  wx.setNavigationBarTitle({
-    title: '会员中心'
-  })
-},     
- 
+    wx.setNavigationBarTitle({
+      title: '会员中心'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-<<<<<<< HEAD
+
   }
-,
-=======
-      // wx.request({
-      //   url: 'https://www.easy-mock.com/mock/5ca4584bc4e9a575b66b62e4/example/two',
-      //   success(res) {
-      //     console.log(res.data)
-      //   }
-      // })
-  },
->>>>>>> 2a1d6796bcbe259f7d2d22f8534f05f48045d201
+  ,
+
+
+
 
   /**
    * 生命周期函数--监听页面隐藏

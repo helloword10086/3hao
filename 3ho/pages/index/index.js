@@ -5,31 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-     flag:true 
+    flag: true
   },
-  chance(){
+  chance() {
     this.setData({
       flag: false
     })
   },
-  concel(){
+  concel() {
     this.setData({
       flag: true
     })
   },
-  consfrim(e){
+  consfrim(e) {
     this.setData({
       flag: true
     })
   },
-  detail(){
+  detail() {
 
     wx.switchTab({
 
       url: '../Take-out/Take-out',
     })
   },
-  map(){
+  map() {
     wx.navigateTo({
       url: '../map/map',
     })
@@ -50,7 +50,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-   var that = this;
+    var that = this;
     wx.setNavigationBarColor({
       frontColor: '#ffffff',
       backgroundColor: '#202021',

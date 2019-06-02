@@ -5,8 +5,8 @@
         <view class="header-title">欢迎光临</view>
         <view class="header-picture">
             <view class="picture-left">
-                <image src="{{data[0]['picture-left']}}" />
-                <view class="pic-title">{{data[0].title}}</view>
+                <image src="../../images/shop.jpg" />
+                <view class="pic-title">V教咖啡</view>
                 <span class="picture-price">55元以下</span>
                 <span class="pic-all">综合</span>
             </view>
@@ -16,7 +16,7 @@
             <view class="header-foot">
                 <view class="address"bindtap="map">
             <image src="../../images/ad.png" />
-                    <span class="dcr">{{data[0].dcr}}</span>
+                    <span class="dcr">教工楼第一楼55号</span>
                 </view>
                 <view class="address-iphone">
                     <image src="../../images/phone.png" />

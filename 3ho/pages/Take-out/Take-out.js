@@ -16,16 +16,16 @@ Page({
     }],
     hotKeyword: ['小吃快餐', '奶茶', '面包甜点', '咖啡', '餐饮', '可以刷卡', '无线上网', '有下午茶', '微信支付']
   },
-map:function(e){
-  wx.navigateTo({
-    url: '../map/map'
-  })
-},
-menu:function(e){
-  wx.navigateTo({
-    url: '../menu/menu'
-  })
-},
+  map: function (e) {
+    wx.navigateTo({
+      url: '../map/map'
+    })
+  },
+  menu: function (e) {
+    wx.navigateTo({
+      url: '../menu/menu'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -37,17 +37,7 @@ menu:function(e){
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var that = this;
-    wx.request({
-      url: 'https://www.easy-mock.com/mock/5cf274e03a77990337d059a0/sao-two/take-out',
-      success(res) {
-        console.log(res.data)
-        var data = res.data.data;
-        that.setData({
-          data,
-        })
-      }
-    })
+
   },
 
   /**
