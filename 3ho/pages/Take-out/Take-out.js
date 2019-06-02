@@ -37,7 +37,17 @@ menu:function(e){
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var that = this;
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5cf274e03a77990337d059a0/sao-two/take-out',
+      success(res) {
+        console.log(res.data)
+        var data = res.data.data;
+        that.setData({
+          data,
+        })
+      }
+    })
   },
 
   /**

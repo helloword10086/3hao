@@ -58,8 +58,18 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+<<<<<<< HEAD
   }
 ,
+=======
+      // wx.request({
+      //   url: 'https://www.easy-mock.com/mock/5ca4584bc4e9a575b66b62e4/example/two',
+      //   success(res) {
+      //     console.log(res.data)
+      //   }
+      // })
+  },
+>>>>>>> 2a1d6796bcbe259f7d2d22f8534f05f48045d201
 
   /**
    * 生命周期函数--监听页面隐藏

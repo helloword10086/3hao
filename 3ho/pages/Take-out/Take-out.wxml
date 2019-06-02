@@ -5,9 +5,9 @@
         <view class="header-title">欢迎光临</view>
         <view class="header-picture">
             <view class="picture-left">
-                <image src="../../images/shop.jpg" />
-                <view class="pic-title">V咖教工路店</view>
-                <span class="picture-price">50元以下</span>
+                <image src="{{data[0]['picture-left']}}" />
+                <view class="pic-title">{{data[0].title}}</view>
+                <span class="picture-price">55元以下</span>
                 <span class="pic-all">综合</span>
             </view>
             <view class="picture-right">
@@ -16,7 +16,7 @@
             <view class="header-foot">
                 <view class="address"bindtap="map">
             <image src="../../images/ad.png" />
-                    <span class="dcr">教工楼552号一楼</span>
+                    <span class="dcr">{{data[0].dcr}}</span>
                 </view>
                 <view class="address-iphone">
                     <image src="../../images/phone.png" />
