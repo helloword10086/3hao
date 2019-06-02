@@ -14,7 +14,15 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
+<<<<<<< HEAD
+	"appid": "wx06062c370aa29cdb",
+=======
+<<<<<<< HEAD
+	"appid": "wx9b4f41b9c3a6d842",
+=======
 	"appid": "wxeb5dd4b153f6de54",
+>>>>>>> f7ce3c5cba44f02c1932afaf6a486199d7bd8885
+>>>>>>> 4cdc590681c9e45c35bd6adf6fa2092e4bb82bc8
 	"projectname": "3ho",
 	"debugOptions": {
 		"hidedInDevtools": []

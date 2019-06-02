@@ -23,16 +23,21 @@ Page({
     })
   },
   detail(){
-    wx.navigateTo({
+
+    wx.switchTab({
+
       url: '../Take-out/Take-out',
+    })
+  },
+  map(){
+    wx.navigateTo({
+      url: '../map/map',
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
 
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -45,7 +50,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+   var that = this;
     wx.setNavigationBarColor({
       frontColor: '#ffffff',
       backgroundColor: '#202021',
@@ -56,6 +61,16 @@ Page({
     })
     wx.setNavigationBarTitle({
       title: '附近的点'
+    })
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5ca4584bc4e9a575b66b62e4/example/two',
+      success(res) {
+        console.log(res.data)
+        var data = res.data.data;
+        that.setData({
+          data,
+        })
+      }
     })
   },
 

@@ -1,31 +1,13 @@
-// pages/Take-out/Take-out.js
+// pages/Member/Member.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "bnrUrl": [{
-      "url": "../../images/bg1.jpg"
-    }, {
-      "url": "../../images/bg2.jpg"
-    }, {
-      "url": "../../images/bg3.jpg"
-    }, {
-      "url": "../../images/bg1.jpg"
-    }],
-    hotKeyword: ['小吃快餐', '奶茶', '面包甜点', '咖啡', '餐饮', '可以刷卡', '无线上网', '有下午茶', '微信支付']
+
   },
-map:function(e){
-  wx.navigateTo({
-    url: '../map/map'
-  })
-},
-menu:function(e){
-  wx.navigateTo({
-    url: '../menu/menu'
-  })
-},
+
   /**
    * 生命周期函数--监听页面加载
    */

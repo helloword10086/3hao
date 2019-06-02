@@ -1,31 +1,31 @@
-// pages/Take-out/Take-out.js
+// pages/user/user.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "bnrUrl": [{
-      "url": "../../images/bg1.jpg"
-    }, {
-      "url": "../../images/bg2.jpg"
-    }, {
-      "url": "../../images/bg3.jpg"
-    }, {
-      "url": "../../images/bg1.jpg"
-    }],
-    hotKeyword: ['小吃快餐', '奶茶', '面包甜点', '咖啡', '餐饮', '可以刷卡', '无线上网', '有下午茶', '微信支付']
+   flag:false
   },
-map:function(e){
-  wx.navigateTo({
-    url: '../map/map'
-  })
-},
-menu:function(e){
-  wx.navigateTo({
-    url: '../menu/menu'
-  })
-},
+  phone(e){
+    console.log(e);
+   this.setData({
+     flag:true
+   })
+    wx.showModal({
+      title: '提示',
+      content: '是否绑定号码',
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+   
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -44,7 +44,12 @@ menu:function(e){
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+      // wx.request({
+      //   url: 'https://www.easy-mock.com/mock/5ca4584bc4e9a575b66b62e4/example/two',
+      //   success(res) {
+      //     console.log(res.data)
+      //   }
+      // })
   },
 
   /**
