@@ -1,0 +1,66 @@
+<view class='sou'>
+
+  <image src='/images/sou.png' class='mage1'></image>
+  <input placeholder='请输入店名' bindtap='searchFoot'></input>
+  <image src='/images/ding.png' class='mage2'></image>
+</view>
+<view class='vant'>
+  <text class='title1' bindtap='chance'>美食类型</text>
+  <text class='title2' bindtap='chance'>筛选</text>
+</view>
+
+ <view class='search-foot' hidden='{{flag}}'>
+            <text class='foot'>海鲜</text>
+            <text class='foot'>自助</text>
+            <text class='foot'>火锅</text>
+            <view class='butt'>
+              <view class='cancel' bindtap='concel'>取消</view>
+              <view class='consfirm' bindtap='consfrim'>确定</view>
+            </view>
+  </view>
+
+<view class='content' bindtap='detail'>
+  <view class='store'>
+    <image class='store-url' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559372648989&di=cca9166be2e5500f1b123b7a1b6a04aa&imgtype=0&src=http%3A%2F%2Fp0.ifengimg.com%2Fcmpp%2F2016%2F10%2F09%2F21%2Ffc34b6b4-8161-48e0-b1c9-f1421c7c6a7e_size320_w557_h821.jpg'></image>
+    <text class='long'>1km</text>
+    <text class='title'>v家教公路店</text>
+    <text class='adress'> 教工里552</text>
+    <text class='zhe'>8.7</text>
+  </view>
+</view>
+<view class='content' bindtap='detail'>
+  <view class='store'>
+    <image class='store-url' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559372648989&di=cca9166be2e5500f1b123b7a1b6a04aa&imgtype=0&src=http%3A%2F%2Fp0.ifengimg.com%2Fcmpp%2F2016%2F10%2F09%2F21%2Ffc34b6b4-8161-48e0-b1c9-f1421c7c6a7e_size320_w557_h821.jpg'></image>
+    <text class='long'>1km</text>
+    <text class='title'>v家教公路店</text>
+    <text class='adress'> 教工里552</text>
+    <text class='zhe'>8.7</text>
+  </view>
+</view>
+<view class='content' bindtap='detail'>
+  <view class='store'>
+    <image class='store-url' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559372648989&di=cca9166be2e5500f1b123b7a1b6a04aa&imgtype=0&src=http%3A%2F%2Fp0.ifengimg.com%2Fcmpp%2F2016%2F10%2F09%2F21%2Ffc34b6b4-8161-48e0-b1c9-f1421c7c6a7e_size320_w557_h821.jpg'></image>
+    <text class='long'>1km</text>
+    <text class='title'>v家教公路店</text>
+    <text class='adress'> 教工里552</text>
+    <text class='zhe'>8.7</text>
+  </view>
+</view>
+<view class='content' bindtap='detail'>
+  <view class='store'>
+    <image class='store-url' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559372648989&di=cca9166be2e5500f1b123b7a1b6a04aa&imgtype=0&src=http%3A%2F%2Fp0.ifengimg.com%2Fcmpp%2F2016%2F10%2F09%2F21%2Ffc34b6b4-8161-48e0-b1c9-f1421c7c6a7e_size320_w557_h821.jpg'></image>
+    <text class='long'>1km</text>
+    <text class='title'>v家教公路店</text>
+    <text class='adress'> 教工里552</text>
+    <text class='zhe'>8.7</text>
+  </view>
+</view>
+<view class='content' bindtap='detail'>
+  <view class='store'>
+    <image class='store-url' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559372648989&di=cca9166be2e5500f1b123b7a1b6a04aa&imgtype=0&src=http%3A%2F%2Fp0.ifengimg.com%2Fcmpp%2F2016%2F10%2F09%2F21%2Ffc34b6b4-8161-48e0-b1c9-f1421c7c6a7e_size320_w557_h821.jpg'></image>
+    <text class='long'>1km</text>
+    <text class='title'>v家教公路店</text>
+    <text class='adress'> 教工里552</text>
+    <text class='zhe'>8.7</text>
+  </view>
+</view>
